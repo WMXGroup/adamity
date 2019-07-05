@@ -1,0 +1,27 @@
+import React from 'react';
+import Main from './components/main/Main';
+import { ThemeProvider } from '@material-ui/styles';
+import { createMuiTheme } from "@material-ui/core";
+import { blue } from '@material-ui/core/colors';
+import { pink } from '@material-ui/core/colors';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: blue
+  },
+  typography: {
+    
+  }
+});
+
+function App() {
+  return (
+    <div className="App">
+      <ThemeProvider theme={theme}>
+        <Main />
+      </ThemeProvider>
+    </div>
+  );
+}
+
+export default App;
