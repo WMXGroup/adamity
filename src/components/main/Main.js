@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import Button from '@material-ui/core/Button';
 import { Grid } from '@material-ui/core';
 import EasyCard from '../common/EasyCard';
 import PropTypes from 'prop-types';
-// import NewSketch from './NewSketch';
+import Header from '../common/Header';
 import Background from '../../assets/back.jpg';
 import imgReact from '../../assets/react.png';
 import imgMaterial from '../../assets/material.png';
+import P5Wrapper from 'react-p5-wrapper';
+import sketch2 from './MySketch2';
 
 const styles = (theme) => ({
   header: {
@@ -69,21 +68,7 @@ class Main extends Component {
   const { selectedTab } = this.state;
     return (
       <React.Fragment>
-        <AppBar position="fixed" color="primary">
-          <Toolbar>
-            <Typography variant="h6" color="inherit">
-              Adamity
-            </Typography>
-            <Grid
-              container
-              justify="flex-end">
-              <Button color="inherit">Home</Button>
-              <Button color="inherit">About</Button>
-              <Button color="inherit">Contact</Button>
-              <Button color="inherit">Services</Button>
-            </Grid>
-          </Toolbar>
-        </AppBar>
+        <Header />
         <Grid
           container
           justify="center"
@@ -146,25 +131,29 @@ class Main extends Component {
             cardTitle='Chore Tracker'
             cardText='Keep your family organized and on task with this nifty chore tracker'
             cardImage={require ('../../assets/choreTracker.png')}
+            dlRoute=""
             cardRoute='test'
           />
           <EasyCard
             cardTitle='Recipe Book'
             cardText='Quick and easy way to organize all of your favorite recipes'
             cardImage={require ('../../assets/recipeBook.png')}
+            dlRoute=""
             cardRoute='test'
           />
           <EasyCard
             cardTitle='Meal Budgeter'
             cardText='Meal Budgeter is a tool to help you plan your meals around your budget.'
             cardImage={require ('../../assets/mealBudgeter.png')}
+            dlRoute=""
             cardRoute='test'
           />
           <EasyCard
             cardTitle='Monthly Calendar'
             cardText='Monthly Calendar is a simple tool that creates monthly calendars.'
             cardImage={require ('../../assets/monthlyCalendar.png')}
-            cardRoute='test'
+            cardRoute='/monthlyCalendar'
+            dlRoute='http://drive.google.com/uc?export=download&id=14SLiCCAx7LRZriv_yzo8np3HrLHXksMP'
           />
         </Grid>
       }
@@ -177,12 +166,14 @@ class Main extends Component {
             cardTitle='Task Advantage'
             cardText='Task Advantage is a complete tool project management tool kit and task tracker'
             cardImage={require ('../../assets/taskAdvantage.png')}
+            dlRoute=""
             cardRoute='test'
           />
           <EasyCard
             cardTitle='Financial Objective'
             cardText='Financial Objective is a tool that helps users easily keep track of their savings and spending'
-            cardImage={require ('../../assets/financialOutlook.PNG')}
+            cardImage={require ('../../assets/financialOutlook.png')}
+            dlRoute=""
             cardRoute='test'
           />
           </Grid>
@@ -204,9 +195,7 @@ class Main extends Component {
           justify="center"
           alignContent="center"
           className={classes.soon}>
-            <Typography variant="h2" color="inherit">
-              Coming Soon...
-            </Typography>
+            <P5Wrapper sketch={sketch2} />
           </Grid>
         }
         {selectedTab === 4 &&

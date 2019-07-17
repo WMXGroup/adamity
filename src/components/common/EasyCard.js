@@ -13,14 +13,14 @@ const styles = () => ({
     flexGrow: 1,
   },
   card: {
-    maxWidth: 300,
+    maxWidth: 400,
     minWidth: 400,
     marginTop: '1rem',
     marginRight: '1rem',
     marginBottom: '1rem',
   },
   media: {
-    height: 250,
+    height: 300,
   },
 });
 
@@ -43,9 +43,8 @@ class EasyCard extends Component {
     cardText,
     cardImage,
     cardRoute,
+    dlRoute
   } = this.props
-
-  console.log(cardImage);
 
     return (
       <Card className={classes.card}>
@@ -64,10 +63,18 @@ class EasyCard extends Component {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button
+          size="small"
+          color="primary"
+          href={dlRoute}
+          >
           Download
         </Button>
-        <Button size="small" color="primary">
+        <Button
+          size="small"
+          color="primary"
+          href={cardRoute}
+          >
           Learn More
         </Button>
       </CardActions>
