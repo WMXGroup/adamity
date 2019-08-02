@@ -1,4 +1,4 @@
-export default function MySketch2 (p) {
+export default function Sketch1 (p) {
 let balls = []
 
 p.setup = function () {

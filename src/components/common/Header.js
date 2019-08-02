@@ -7,21 +7,22 @@ import { Grid } from '@material-ui/core';
 
 export default function Header() {
   return (
-<AppBar position="fixed" color="primary">
-<Toolbar>
-  <Typography variant="h6" color="inherit">
-    Adamity
-  </Typography>
-  <Grid
-    container
-    justify="flex-end">
-    <Button color="inherit">Home</Button>
-    <Button color="inherit" href={'/about'}>About</Button>
-    <Button color="inherit">Contact</Button>
-    <Button color="inherit">Services</Button>
-  </Grid>
-</Toolbar>
-</AppBar>
+    <AppBar position="fixed" color="primary">
+    <Toolbar>
+      <Typography variant="h6" color="inherit">
+        Adamity
+      </Typography>
+      <Grid
+        container
+        justify="flex-end">
+        <Button color="inherit" href={'/'}>Home</Button>
+        {/* <Button color="inherit" >Blog</Button> */}
+        <Button color="inherit" href={'/about'}>About</Button>
+        <Button color="inherit" href={'/blog'}>Blog</Button>
+        <Button color="inherit" href={'/terms'}>Terms</Button>
+      </Grid>
+    </Toolbar>
+    </AppBar>
   )
 }
 

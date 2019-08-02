@@ -25,15 +25,6 @@ const styles = () => ({
 });
 
 class EasyCard extends Component {
-  // state = {
-  //   selectedTab: 0,
-  // }
-
-  // handleChange = (e, value) => {
-  //   this.setState({
-  //     selectedTab: value,
-  //   })
-  // }
 
   render() {
   const { classes } = this.props;
@@ -66,7 +57,7 @@ class EasyCard extends Component {
         <Button
           size="small"
           color="primary"
-          href={dlRoute}
+           
           >
           Download
         </Button>

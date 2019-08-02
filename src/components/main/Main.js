@@ -7,11 +7,10 @@ import { Grid } from '@material-ui/core';
 import EasyCard from '../common/EasyCard';
 import PropTypes from 'prop-types';
 import Header from '../common/Header';
+import Footer from '../common/Footer';
 import Background from '../../assets/back.jpg';
-import imgReact from '../../assets/react.png';
-import imgMaterial from '../../assets/material.png';
 import P5Wrapper from 'react-p5-wrapper';
-import sketch2 from './MySketch2';
+import sketch1 from '../sketches/Sketch1';
 
 const styles = (theme) => ({
   header: {
@@ -41,15 +40,6 @@ const styles = (theme) => ({
     marginLeft: '1rem',
     marginRight: '1rem',
   },
-  footer:{
-    backgroundColor: theme.palette.primary.main,
-    height: '4rem',
-    color: 'white'
-  },
-  image: {
-    width: 48,
-    height:42,
-  }
 });
 
 class Main extends Component {
@@ -92,7 +82,7 @@ class Main extends Component {
             alignContent="center"
             className={classes.description}>
             <Typography variant="body1" color="inherit">
-              Adamity is a collection of tools, demos, and tutorials for a wide variety of technologies. 
+              Adamity is a collection of tools, demos, and tutorials covering a wide variety of technologies. 
             </Typography>
           </Grid>
           <Grid container>
@@ -108,75 +98,90 @@ class Main extends Component {
             </Typography>
           </Grid>
         </Grid>
-        <Tabs
-          className={classes.tabs}
-          value={this.state.selectedTab}
-          onChange={this.handleChange}
-          textColor="primary"
-          indicatorColor="primary"
-          centered
-          >
-        <Tab label="Excel Free" />
-        <Tab label="Excel Premium" />
-        <Tab label="Python" />
-        <Tab label="P5.js" />
-        <Tab label="Tutorials" />
-      </Tabs>
-      {selectedTab === 0 &&
         <Grid
           container
-          justify="center"
-          >
-          <EasyCard
-            cardTitle='Chore Tracker'
-            cardText='Keep your family organized and on task with this nifty chore tracker'
-            cardImage={require ('../../assets/choreTracker.png')}
-            dlRoute=""
-            cardRoute='test'
-          />
-          <EasyCard
-            cardTitle='Recipe Book'
-            cardText='Quick and easy way to organize all of your favorite recipes'
-            cardImage={require ('../../assets/recipeBook.png')}
-            dlRoute=""
-            cardRoute='test'
-          />
-          <EasyCard
-            cardTitle='Meal Budgeter'
-            cardText='Meal Budgeter is a tool to help you plan your meals around your budget.'
-            cardImage={require ('../../assets/mealBudgeter.png')}
-            dlRoute=""
-            cardRoute='test'
-          />
-          <EasyCard
-            cardTitle='Monthly Calendar'
-            cardText='Monthly Calendar is a simple tool that creates monthly calendars.'
-            cardImage={require ('../../assets/monthlyCalendar.png')}
-            cardRoute='/monthlyCalendar'
-            dlRoute='http://drive.google.com/uc?export=download&id=14SLiCCAx7LRZriv_yzo8np3HrLHXksMP'
-          />
+          justify="center">
+          <Tabs
+            className={classes.tabs}
+            value={this.state.selectedTab}
+            onChange={this.handleChange}
+            textColor="primary"
+            indicatorColor="primary"
+            variant="scrollable"
+            scrollButtons="on"
+            >
+            <Tab label="Excel Free" />
+            <Tab label="Excel Premium" />
+            <Tab label="Python" />
+            <Tab label="P5.js" />
+            <Tab label="Tutorials" />
+            <Tab label="Cheatsheets" />
+          </Tabs>
         </Grid>
-      }
-      {selectedTab === 1 &&
-        <Grid
+        {selectedTab === 0 &&
+          <Grid
+            container
+            justify="center"
+            >
+            <EasyCard
+              cardTitle='Simple Tracker'
+              cardText='Keep things organized with this simple multi-functional tracker.'
+              cardImage={require ('../../assets/choreTracker.png')}
+              dlRoute='http://drive.google.com/uc?export=download&id=1T3B3JB4tk5j8MFc4dtwLClk9FVbAZ5Mw'
+              cardRoute='/simpleTracker'
+            />
+            <EasyCard
+              cardTitle='Recipe Book'
+              cardText='Provides a quick and easy way to organize all of your favorite recipes.'
+              cardImage={require ('../../assets/recipeBook.png')}
+              dlRoute='http://drive.google.com/uc?export=download&id=1xLnf02Erv45PwWUa4LEqXCg1qWywtKT_'
+              cardRoute='/recipeBook'
+            />
+            <EasyCard
+              cardTitle='Meal Budgeter'
+              cardText='Meal Budgeter is a tool to help you plan your meals around your budget.'
+              cardImage={require ('../../assets/mealBudgeter.png')}
+              dlRoute='http://drive.google.com/uc?export=download&id=1sdN1G-Mfl2S_hqF_oM9JtZAAkt1MqPKW'
+              cardRoute='/mealBudgeter'
+            />
+            <EasyCard
+              cardTitle='Monthly Calendar'
+              cardText='Monthly Calendar is a simple tool that creates printable monthly calendars.'
+              cardImage={require ('../../assets/monthlyCalendar.png')}
+              cardRoute='/monthlyCalendar'
+              dlRoute='http://drive.google.com/uc?export=download&id=1B0VMyAmLbXzrDMiEHnriyni_M6YuWjqz'
+            />
+          </Grid>
+        }
+        {selectedTab === 1 &&
+          <Grid
           container
           justify="center"
-          >
-          <EasyCard
-            cardTitle='Task Advantage'
-            cardText='Task Advantage is a complete tool project management tool kit and task tracker'
-            cardImage={require ('../../assets/taskAdvantage.png')}
-            dlRoute=""
-            cardRoute='test'
-          />
-          <EasyCard
-            cardTitle='Financial Objective'
-            cardText='Financial Objective is a tool that helps users easily keep track of their savings and spending'
-            cardImage={require ('../../assets/financialOutlook.png')}
-            dlRoute=""
-            cardRoute='test'
-          />
+          alignContent="center"
+          className={classes.soon}>
+            <Typography variant="h2" color="inherit">
+              Coming Soon...
+            </Typography>
           </Grid>
+          // <Grid
+          //   container
+          //   justify="center"
+          //   >
+          //   <EasyCard
+          //     cardTitle='Task Advantage'
+          //     cardText='Task Advantage is a complete project management tool kit and task tracker.'
+          //     cardImage={require ('../../assets/taskAdvantage.png')}
+          //     dlRoute=''
+          //     cardRoute='/taskAdvantage'
+          //   />
+          //   <EasyCard
+          //     cardTitle='Financial Objective'
+          //     cardText='Financial Objective is a tool that helps users easily keep track of their savings and spending.'
+          //     cardImage={require ('../../assets/financialOutlook.png')}
+          //     dlRoute=''
+          //     cardRoute='/financialObjective'
+          //   />
+          // </Grid>
         }
         {selectedTab === 2 &&
           <Grid
@@ -189,13 +194,13 @@ class Main extends Component {
             </Typography>
           </Grid>
         }
-         {selectedTab === 3 &&
+        {selectedTab === 3 &&
           <Grid
           container
           justify="center"
           alignContent="center"
           className={classes.soon}>
-            <P5Wrapper sketch={sketch2} />
+            <P5Wrapper sketch={sketch1} />
           </Grid>
         }
         {selectedTab === 4 &&
@@ -209,22 +214,18 @@ class Main extends Component {
             </Typography>
           </Grid>
         }
-        <Grid
+        {selectedTab === 5 &&
+          <Grid
           container
           justify="center"
           alignContent="center"
-          alignItems="center"
-          className={classes.footer}
-          >
-          <Typography variant="body1" color="inherit">
-            Copyright &copy; Adamity 2019 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          </Typography>
-          <Typography variant="body1" color="inherit">
-              Built with &nbsp;
-          </Typography>
-          <img src={imgReact} className={classes.image}/> &nbsp;&nbsp;
-          <img src={imgMaterial} className={classes.image}/> 
-        </Grid>
+          className={classes.soon}>
+            <Typography variant="h2" color="inherit">
+              Coming Soon...
+            </Typography>
+          </Grid>
+        }
+        <Footer />
       </React.Fragment>
     );
   }
