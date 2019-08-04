@@ -29,15 +29,23 @@ class Footer extends Component {
         alignItems="center"
         className={classes.footer}
       >
-      <Typography variant="body1" color="inherit">
-        Copyright &copy; Adamity 2019 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      </Typography>
-      <Typography variant="body1" color="inherit">
-          Built with &nbsp;
-      </Typography>
-      <img src={imgReact} className={classes.image}/> &nbsp;&nbsp;
-      <img src={imgMaterial} className={classes.image}/> 
-    </Grid>
+        <Grid item>
+          <Typography variant="body1" color="inherit">
+            Adamity 2019 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </Typography>
+        </Grid>
+        <Grid item>
+          <Typography variant="body1" color="inherit">
+              Built with &nbsp;&nbsp;&nbsp;
+          </Typography>
+        </Grid>
+        <Grid item>
+          <img src={imgReact} className={classes.image}/> &nbsp;&nbsp;
+        </Grid>
+        <Grid item>
+          <img src={imgMaterial} className={classes.image}/>
+        </Grid> 
+      </Grid>
     )
   }   
 }

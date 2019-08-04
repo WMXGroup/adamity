@@ -11,7 +11,8 @@ const styles = (theme) => ({
     height: '75px',
   },
   headingSpacer: {
-    margin: '25px',
+    marginTop: '25px',
+    marginBottom: '25px'
   },
   bodySpacer: {
     margin: '25px',
@@ -32,7 +33,7 @@ class About extends Component {
           justify="center"
           className={classes.headingSpacer}
           >
-          <Typography variant="h2" color="inherit">
+          <Typography variant="h2" color="inherit" align="center">
             About / Contact
           </Typography>
         </Grid>
@@ -40,7 +41,7 @@ class About extends Component {
           container
           justify="center"
           alignContent="center">
-          <Typography variant="body1" color="inherit">
+          <Typography variant="body1" color="inherit" align="center">
             Adamity is a collection of tools, demos, and tutorials covering a wide variety of technologies. 
           </Typography>
         </Grid>
@@ -51,7 +52,7 @@ class About extends Component {
           container
           justify="center"
           alignContent="center">
-          <Typography variant="body1" color="inherit">
+          <Typography variant="body1" color="inherit" align="center">
             Our goal is to simplify, automate, and educate to provide unique solutions for both personal and business use.
           </Typography>
         </Grid>
@@ -62,7 +63,7 @@ class About extends Component {
           container
           justify="center"
           alignContent="center">
-          <Typography variant="body1" color="inherit">
+          <Typography variant="body1" color="inherit" align="center">
             For any comments, questions, or concerns, please contact us at adamity1@gmail.com.
           </Typography>
         </Grid>

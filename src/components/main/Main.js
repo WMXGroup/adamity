@@ -69,7 +69,7 @@ class Main extends Component {
             container
             justify="center"
             alignContent="center">
-            <Typography variant="h3" color="inherit">
+            <Typography variant="h3" color="inherit" align="center">
               Welcome to Adamity! 
             </Typography>
           </Grid>
@@ -81,7 +81,7 @@ class Main extends Component {
             justify="center"
             alignContent="center"
             className={classes.description}>
-            <Typography variant="body1" color="inherit">
+            <Typography variant="body1" color="inherit" align="center">
               Adamity is a collection of tools, demos, and tutorials covering a wide variety of technologies. 
             </Typography>
           </Grid>
@@ -93,7 +93,7 @@ class Main extends Component {
             justify="center"
             alignContent="center"
             className={classes.description}>
-            <Typography variant="body1" color="inherit">
+            <Typography variant="body1" color="inherit" align="center">
               Our goal is to simplify, automate, and educate to provide unique solutions for both personal and business use.
             </Typography>
           </Grid>
@@ -148,8 +148,8 @@ class Main extends Component {
               cardTitle='Monthly Calendar'
               cardText='Monthly Calendar is a simple tool that creates printable monthly calendars.'
               cardImage={require ('../../assets/monthlyCalendar.png')}
-              cardRoute='/monthlyCalendar'
               dlRoute='http://drive.google.com/uc?export=download&id=1B0VMyAmLbXzrDMiEHnriyni_M6YuWjqz'
+              cardRoute='/monthlyCalendar'
             />
           </Grid>
         }
@@ -159,7 +159,7 @@ class Main extends Component {
           justify="center"
           alignContent="center"
           className={classes.soon}>
-            <Typography variant="h2" color="inherit">
+            <Typography variant="h2" color="inherit" align="center">
               Coming Soon...
             </Typography>
           </Grid>
@@ -189,7 +189,7 @@ class Main extends Component {
             justify="center"
             alignContent="center"
             className={classes.soon}>
-            <Typography variant="h2" color="inherit">
+            <Typography variant="h2" color="inherit" align="center">
               Coming Soon...
             </Typography>
           </Grid>
@@ -209,7 +209,7 @@ class Main extends Component {
           justify="center"
           alignContent="center"
           className={classes.soon}>
-            <Typography variant="h2" color="inherit">
+            <Typography variant="h2" color="inherit" align="center">
               Coming Soon...
             </Typography>
           </Grid>
@@ -220,7 +220,7 @@ class Main extends Component {
           justify="center"
           alignContent="center"
           className={classes.soon}>
-            <Typography variant="h2" color="inherit">
+            <Typography variant="h2" color="inherit" align="center">
               Coming Soon...
             </Typography>
           </Grid>

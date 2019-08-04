@@ -13,14 +13,14 @@ const styles = () => ({
     flexGrow: 1,
   },
   card: {
-    maxWidth: 400,
-    minWidth: 400,
     marginTop: '1rem',
     marginRight: '1rem',
     marginBottom: '1rem',
+    width: 400,
   },
   media: {
     height: 300,
+    width: 400,
   },
 });
 
@@ -57,7 +57,7 @@ class EasyCard extends Component {
         <Button
           size="small"
           color="primary"
-           
+          href={dlRoute}          
           >
           Download
         </Button>

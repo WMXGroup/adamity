@@ -29,7 +29,7 @@ class Blog extends Component {
           justify="center"
           className={classes.headingSpacer}
           >
-          <Typography variant="h2" color="inherit">
+          <Typography variant="h2" color="inherit" align="center">
             Coming Soon!
           </Typography>
         </Grid>

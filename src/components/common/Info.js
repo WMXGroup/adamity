@@ -54,15 +54,16 @@ const styles = (theme) => ({
         <Grid
           container
           justify="center"
-          className={classes.titleStyle}>
-            <Typography variant="h1" color="inherit">
-              {title}
-            </Typography>
+          className={classes.titleStyle}
+          >
+          <Typography variant="h2" color="inherit" align="center">
+            {title}
+          </Typography>
         </Grid>
         <Grid
           container
           justify="center">
-            <Typography variant="body1" color="inherit">
+            <Typography variant="body1" color="inherit" align="center">
             {body}
             </Typography>
         </Grid>
@@ -76,8 +77,9 @@ const styles = (theme) => ({
         </Grid>
         <Grid
           container
-          justify="center">
-            <Typography variant="h3" color="inherit">
+          justify="center"
+          >
+            <Typography variant="h3" color="inherit" align="center">
               Features
             </Typography>
         </Grid>
