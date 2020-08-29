@@ -33,9 +33,10 @@ const pages = {
     picture2: require ('./assets/MonthlyCalendar/monthlyCalendar2.PNG'),
     picture3: require ('./assets/MonthlyCalendar/monthlyCalendar3.PNG'),
     dlRoute: 'http://drive.google.com/uc?export=download&id=1B0VMyAmLbXzrDMiEHnriyni_M6YuWjqz',
-    exampleRoute: '',
     docxRoute: 'http://drive.google.com/uc?export=download&id=1HpqrmG93R8PiPCY9hAbwXtZQEZ3-APIB',
     pdfRoute: 'http://drive.google.com/uc?export=download&id=1bmNcM_M6or4myA5NJ5L_1w8nBCKEXN4U',
+    demoRoute: '',
+    price: '',
   },
   simpleTracker: {
     title: 'Simple Tracker',
@@ -49,9 +50,10 @@ const pages = {
     picture2: require ('./assets/SimpleTracker/simpleTracker2.PNG'),
     picture3: require ('./assets/SimpleTracker/simpleTracker3.PNG'),
     dlRoute: 'http://drive.google.com/uc?export=download&id=1T3B3JB4tk5j8MFc4dtwLClk9FVbAZ5Mw',
-    exampleRoute: 'http://drive.google.com/uc?export=download&id=1KtWK0U2_gb7DVrE0Yp95RB4Gz5S6alY1',
     docxRoute: 'http://drive.google.com/uc?export=download&id=1AvjZ1KDP_gG-RSmu8wFXOdL3ffbSRPXo',
     pdfRoute: 'http://drive.google.com/uc?export=download&id=1gxIKVAHBT-flE2222KbHBJhJ53YjM_uI',
+    demoRoute: '',
+    price: '',
   },
   recipeBook: {
     title: 'Recipe Book',
@@ -67,9 +69,10 @@ const pages = {
     picture2: require ('./assets/RecipeBook/recipeBook2.PNG'),
     picture3: require ('./assets/RecipeBook/recipeBook3.PNG'),
     dlRoute: 'http://drive.google.com/uc?export=download&id=1xLnf02Erv45PwWUa4LEqXCg1qWywtKT_',
-    exampleRoute: 'http://drive.google.com/uc?export=download&id=110Gb1Nbz5hbkfmSbysALDUOnDSoeLh3R',
     docxRoute: 'http://drive.google.com/uc?export=download&id=1vKeasrAVosypaGb8i6rBp-reOyj7XvbV',
     pdfRoute: 'http://drive.google.com/uc?export=download&id=1oCMXwjLwdX6O1hlfWBGwxHjT_A6stGU6',
+    demoRoute: '',
+    price: '',
   },
   mealBudgeter: {
     title: 'Meal Budgeter',
@@ -83,9 +86,10 @@ const pages = {
     picture2: require ('./assets/MealBudgeter/mealBudgeter2.PNG'),
     picture3: require ('./assets/MealBudgeter/mealBudgeter3.PNG'),
     dlRoute: 'http://drive.google.com/uc?export=download&id=1sdN1G-Mfl2S_hqF_oM9JtZAAkt1MqPKW',
-    exampleRoute: '',
     docxRoute: 'http://drive.google.com/uc?export=download&id=1xJsrz06R8OHx6bWZuR2b93VZ_MptVenu',
     pdfRoute: 'http://drive.google.com/uc?export=download&id=1xkZ5LfIw4FK88IZjZx0ppqBs-uJb3V2Z',
+    demoRoute: '',
+    price: '',
   },
   financialObjective: {
     title: 'Financial Objective',
@@ -100,9 +104,10 @@ const pages = {
     picture2: require ('./assets/FinancialObjective/financialObjective2.PNG'),
     picture3: require ('./assets/FinancialObjective/financialObjective3.PNG'),
     dlRoute: '',
-    exampleRoute: '',
     docxRoute: 'http://drive.google.com/uc?export=download&id=1RbbXbRbcr7fvP_uOVLz0G7mXRmgW3tSS',
     pdfRoute: 'http://drive.google.com/uc?export=download&id=1Ez_9eG47H1Pmi-Ih_HuheX3Xf2xWFcwE',
+    demoRoute: '',
+    price: '$4.99',
   },
   taskAdvantage: {
     title: 'Task Advantage',
@@ -118,10 +123,11 @@ const pages = {
     picture1: require ('./assets/TaskAdvantage/taskAdvantage1.PNG'),
     picture2: require ('./assets/TaskAdvantage/taskAdvantage2.PNG'),
     picture3: require ('./assets/TaskAdvantage/taskAdvantage3.PNG'),
-    dlRoute: '',
-    exampleRoute: '',
+    dlRoute: 'http://adamity.fetchapp.com/sell/5fc5853f',
     docxRoute: 'http://drive.google.com/uc?export=download&id=1jg3mDrR82aPUS15o5qe16ozd2EIDeJx-',
     pdfRoute: 'http://drive.google.com/uc?export=download&id=1IqD4mvtQgKSwOIbbpqXoUVorW68YI-tt',
+    demoRoute: '',
+    price: '$4.99',
   },
 }
 
@@ -135,7 +141,6 @@ function App() {
           )} />
           <Route path="/home" component={Main} />
           <Route path="/about" component={About} />
-          <Route path="/blog" component={Blog} />
           <Route path="/terms" component={Terms} />
           <Route
             path='/monthlyCalendar'
@@ -153,14 +158,14 @@ function App() {
             path='/recipeBook'
             render={() => <Info info={pages.recipeBook} />}
           />
-          <Route
+          {/* <Route
             path='/taskAdvantage'
             render={() => <Info info={pages.taskAdvantage} />}
-          />
-          <Route
+          /> */}
+          {/* <Route
             path='/financialObjective'
             render={() => <Info info={pages.financialObjective} />}
-          />
+          /> */}
         </ThemeProvider>
       </div>
     </Router>

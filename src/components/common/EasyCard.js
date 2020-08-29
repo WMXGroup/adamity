@@ -22,19 +22,27 @@ const styles = () => ({
     height: 300,
     width: 400,
   },
+  media2: {
+    height: 200,
+    width: 300,
+  },
+  price: {
+    marginLeft: '1rem',
+  }
 });
 
 class EasyCard extends Component {
 
   render() {
   const { classes } = this.props;
-  // const { selectedTab } = this.state;
   const { 
     cardTitle,
     cardText,
     cardImage,
     cardRoute,
-    dlRoute
+    dlRoute,
+    cardPrice,
+    cardType,
   } = this.props
 
     return (
@@ -59,15 +67,22 @@ class EasyCard extends Component {
           color="primary"
           href={dlRoute}          
           >
-          Download
+          {cardPrice !== '' ? 'Buy' : cardType === 'app' ? 'Link' : 'Download' }
         </Button>
-        <Button
-          size="small"
-          color="primary"
-          href={cardRoute}
-          >
-          Learn More
-        </Button>
+        {cardRoute !== '' &&
+          <Button
+            size="small"
+            color="primary"
+            href={cardRoute}
+            >
+            Learn More
+          </Button>
+        }
+        <span className={classes.price}>
+          {cardPrice !== '' && 
+            cardPrice
+          }
+        </span>
       </CardActions>
     </Card>
     );

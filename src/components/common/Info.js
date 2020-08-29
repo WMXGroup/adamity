@@ -41,9 +41,10 @@ const styles = (theme) => ({
       picture2,
       picture3,
       dlRoute,
-      exampleRoute,
       docxRoute,
       pdfRoute,
+      price,
+      demoRoute,
     }  = this.props.info;
 
     return (
@@ -92,30 +93,54 @@ const styles = (theme) => ({
               </ul>
             </Typography>
         </Grid>
+        {price !== '' &&
+          <Grid
+            container
+            justify="center">
+              <Typography variant="h4" color="inherit">
+              {price}
+              </Typography>
+          </Grid>
+        }
         <Grid
           container
           justify="center">
-          <Button
-            color="primary"
-            variant="contained"
-            className={classes.buttonStyle}
-            href={dlRoute}>
-              Download
-          </Button>
-          <Button
-            color="primary"
-            variant="contained"
-            className={classes.buttonStyle}
-            href={docxRoute}>
-              View Readme (Docx)
-          </Button>
-          <Button
-            color="primary"
-            variant="contained"
-            className={classes.buttonStyle}
-            href={pdfRoute}>
-              View Readme (PDF)
-          </Button>
+          {dlRoute !== '' &&
+            <Button
+              color="primary"
+              variant="contained"
+              className={classes.buttonStyle}
+              href={dlRoute}>
+                {price === '' ? 'Download' : 'Buy (Paypal)'}
+            </Button>
+          }
+          {docxRoute !== '' &&
+            <Button
+              color="primary"
+              variant="contained"
+              className={classes.buttonStyle}
+              href={docxRoute}>
+                View Readme (Docx)
+            </Button>
+          }
+          {pdfRoute !== '' &&
+            <Button
+              color="primary"
+              variant="contained"
+              className={classes.buttonStyle}
+              href={pdfRoute}>
+                View Readme (PDF)
+            </Button>
+          }
+          {demoRoute !== '' &&
+            <Button
+              color="primary"
+              variant="contained"
+              className={classes.buttonStyle}
+              href={demoRoute}>
+                View Demo
+            </Button>
+          }
         </Grid>
         <Footer />
       </React.Fragment>

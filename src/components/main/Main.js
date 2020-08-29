@@ -110,8 +110,8 @@ class Main extends Component {
             variant="scrollable"
             scrollButtons="on"
             >
-            <Tab label="Excel Free" />
-            <Tab label="Excel Premium" />
+            <Tab label="React Apps" />
+            <Tab label="Excel" />
             <Tab label="Python" />
             <Tab label="P5.js" />
             <Tab label="Tutorials" />
@@ -124,11 +124,38 @@ class Main extends Component {
             justify="center"
             >
             <EasyCard
+              cardTitle='Outliner'
+              cardText='Keep your ideas organized with the Outliner app'
+              cardImage={require ('../../assets/Outliner.png')}
+              dlRoute='https://wmxgroup.github.io/react-sandbox-1/'
+              cardRoute=''
+              cardPrice=''
+              cardType='app'
+            />
+            <EasyCard
+              cardTitle='Task Tracker'
+              cardText='Track One-time and Recurring tasks and manage them through a variety of views'
+              cardImage={require ('../../assets/taskTracker.png')}
+              dlRoute='https://wmxgroup.github.io/task-tracker/'
+              cardRoute=''
+              cardPrice=''
+              cardType='app'
+            />
+          </Grid>
+        }
+        {selectedTab === 1 &&
+          <Grid
+            container
+            justify="center"
+            >
+            <EasyCard
               cardTitle='Simple Tracker'
               cardText='Keep things organized with this simple multi-functional tracker.'
               cardImage={require ('../../assets/choreTracker.png')}
               dlRoute='http://drive.google.com/uc?export=download&id=1T3B3JB4tk5j8MFc4dtwLClk9FVbAZ5Mw'
               cardRoute='/simpleTracker'
+              cardPrice=''
+              cardType='spreadsheet'
             />
             <EasyCard
               cardTitle='Recipe Book'
@@ -136,6 +163,8 @@ class Main extends Component {
               cardImage={require ('../../assets/recipeBook.png')}
               dlRoute='http://drive.google.com/uc?export=download&id=1xLnf02Erv45PwWUa4LEqXCg1qWywtKT_'
               cardRoute='/recipeBook'
+              cardPrice=''
+              cardType='spreadsheet'
             />
             <EasyCard
               cardTitle='Meal Budgeter'
@@ -143,6 +172,8 @@ class Main extends Component {
               cardImage={require ('../../assets/mealBudgeter.png')}
               dlRoute='http://drive.google.com/uc?export=download&id=1sdN1G-Mfl2S_hqF_oM9JtZAAkt1MqPKW'
               cardRoute='/mealBudgeter'
+              cardPrice=''
+              cardType='spreadsheet'
             />
             <EasyCard
               cardTitle='Monthly Calendar'
@@ -150,38 +181,10 @@ class Main extends Component {
               cardImage={require ('../../assets/monthlyCalendar.png')}
               dlRoute='http://drive.google.com/uc?export=download&id=1B0VMyAmLbXzrDMiEHnriyni_M6YuWjqz'
               cardRoute='/monthlyCalendar'
+              cardPrice=''
+              cardType='spreadsheet'
             />
           </Grid>
-        }
-        {selectedTab === 1 &&
-          <Grid
-          container
-          justify="center"
-          alignContent="center"
-          className={classes.soon}>
-            <Typography variant="h2" color="inherit" align="center">
-              Coming Soon...
-            </Typography>
-          </Grid>
-          // <Grid
-          //   container
-          //   justify="center"
-          //   >
-          //   <EasyCard
-          //     cardTitle='Task Advantage'
-          //     cardText='Task Advantage is a complete project management tool kit and task tracker.'
-          //     cardImage={require ('../../assets/taskAdvantage.png')}
-          //     dlRoute=''
-          //     cardRoute='/taskAdvantage'
-          //   />
-          //   <EasyCard
-          //     cardTitle='Financial Objective'
-          //     cardText='Financial Objective is a tool that helps users easily keep track of their savings and spending.'
-          //     cardImage={require ('../../assets/financialOutlook.png')}
-          //     dlRoute=''
-          //     cardRoute='/financialObjective'
-          //   />
-          // </Grid>
         }
         {selectedTab === 2 &&
           <Grid

@@ -18,7 +18,7 @@ export default function Header() {
         <Button color="inherit" href={'/'}>Home</Button>
         {/* <Button color="inherit" >Blog</Button> */}
         <Button color="inherit" href={'/about'}>About</Button>
-        <Button color="inherit" href={'/blog'}>Blog</Button>
+        <Button color="inherit" href={'#'}>Github</Button>
         <Button color="inherit" href={'/terms'}>Terms</Button>
       </Grid>
     </Toolbar>
