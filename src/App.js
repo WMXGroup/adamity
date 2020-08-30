@@ -4,7 +4,7 @@ import { ThemeProvider } from '@material-ui/styles';
 import { createMuiTheme } from "@material-ui/core";
 import { blue } from '@material-ui/core/colors';
 import { pink } from '@material-ui/core/colors';
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import { HashRouter as Router, Route} from "react-router-dom";
 import About from './components/main/About';
 import Terms from './components/main/Terms';
 import Blog from './components/main/Blog';
