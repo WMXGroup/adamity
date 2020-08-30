@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/adamity/precache-manifest.00f66ac1d570d55718d5988ee4227809.js"
+  "/adamity/precache-manifest.4cfd07c656fde3c6e5ead79636a2a8fb.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/adamity/static/js/main.0583f71d.chunk.js",
-    "main.js.map": "/adamity/static/js/main.0583f71d.chunk.js.map",
+    "main.js": "/adamity/static/js/main.8ef55cf5.chunk.js",
+    "main.js.map": "/adamity/static/js/main.8ef55cf5.chunk.js.map",
     "runtime~main.js": "/adamity/static/js/runtime~main.c9dc9881.js",
     "runtime~main.js.map": "/adamity/static/js/runtime~main.c9dc9881.js.map",
-    "static/js/2.24a00231.chunk.js": "/adamity/static/js/2.24a00231.chunk.js",
-    "static/js/2.24a00231.chunk.js.map": "/adamity/static/js/2.24a00231.chunk.js.map",
+    "static/js/2.f5fd20d5.chunk.js": "/adamity/static/js/2.f5fd20d5.chunk.js",
+    "static/js/2.f5fd20d5.chunk.js.map": "/adamity/static/js/2.f5fd20d5.chunk.js.map",
     "index.html": "/adamity/index.html",
-    "precache-manifest.00f66ac1d570d55718d5988ee4227809.js": "/adamity/precache-manifest.00f66ac1d570d55718d5988ee4227809.js",
+    "precache-manifest.4cfd07c656fde3c6e5ead79636a2a8fb.js": "/adamity/precache-manifest.4cfd07c656fde3c6e5ead79636a2a8fb.js",
     "service-worker.js": "/adamity/service-worker.js",
     "static/media/Outliner.png": "/adamity/static/media/Outliner.0154eeeb.png",
     "static/media/back.jpg": "/adamity/static/media/back.0ff3ab99.jpg",
