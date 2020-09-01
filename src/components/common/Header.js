@@ -9,17 +9,16 @@ export default function Header() {
   return (
     <AppBar position="fixed" color="primary">
     <Toolbar>
-      <Typography variant="h6" color="inherit">
-        Adamity
-      </Typography>
+      <Button color="inherit" href={'/'}>
+        <Typography variant="h6" color="inherit">
+          Adamity
+        </Typography>
+      </Button>
       <Grid
         container
         justify="flex-end">
-        <Button color="inherit" href={'/'}>Home</Button>
-        {/* <Button color="inherit" >Blog</Button> */}
-        <Button color="inherit" href={'/about'}>About</Button>
-        <Button color="inherit" href={'#'}>Github</Button>
-        <Button color="inherit" href={'/terms'}>Terms</Button>
+        <Button color="inherit" href={'/#/about'}>About</Button>
+        <Button color="inherit" href={'/#/terms'}>Terms</Button>
       </Grid>
     </Toolbar>
     </AppBar>

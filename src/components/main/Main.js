@@ -125,7 +125,7 @@ class Main extends Component {
             >
             <EasyCard
               cardTitle='Outliner'
-              cardText='Keep your ideas organized with the Outliner app'
+              cardText='Create an unlimited number of nested lists to help brainstorm and organize ideas'
               cardImage={require ('../../assets/Outliner.png')}
               dlRoute='https://wmxgroup.github.io/react-sandbox-1/'
               cardRoute=''
@@ -134,7 +134,7 @@ class Main extends Component {
             />
             <EasyCard
               cardTitle='Task Tracker'
-              cardText='Track One-time and Recurring tasks and manage them through a variety of views'
+              cardText='Track both one-time and recurring tasks while managing them through a variety of views'
               cardImage={require ('../../assets/taskTracker.png')}
               dlRoute='https://wmxgroup.github.io/task-tracker/'
               cardRoute=''
@@ -153,7 +153,7 @@ class Main extends Component {
               cardText='Keep things organized with this simple multi-functional tracker.'
               cardImage={require ('../../assets/choreTracker.png')}
               dlRoute='http://drive.google.com/uc?export=download&id=1T3B3JB4tk5j8MFc4dtwLClk9FVbAZ5Mw'
-              cardRoute='/simpleTracker'
+              cardRoute='/#/simpleTracker'
               cardPrice=''
               cardType='spreadsheet'
             />
@@ -162,7 +162,7 @@ class Main extends Component {
               cardText='Provides a quick and easy way to organize all of your favorite recipes.'
               cardImage={require ('../../assets/recipeBook.png')}
               dlRoute='http://drive.google.com/uc?export=download&id=1xLnf02Erv45PwWUa4LEqXCg1qWywtKT_'
-              cardRoute='/recipeBook'
+              cardRoute='/#/recipeBook'
               cardPrice=''
               cardType='spreadsheet'
             />
@@ -171,7 +171,7 @@ class Main extends Component {
               cardText='Meal Budgeter is a tool to help you plan your meals around your budget.'
               cardImage={require ('../../assets/mealBudgeter.png')}
               dlRoute='http://drive.google.com/uc?export=download&id=1sdN1G-Mfl2S_hqF_oM9JtZAAkt1MqPKW'
-              cardRoute='/mealBudgeter'
+              cardRoute='/#/mealBudgeter'
               cardPrice=''
               cardType='spreadsheet'
             />
@@ -180,7 +180,7 @@ class Main extends Component {
               cardText='Monthly Calendar is a simple tool that creates printable monthly calendars.'
               cardImage={require ('../../assets/monthlyCalendar.png')}
               dlRoute='http://drive.google.com/uc?export=download&id=1B0VMyAmLbXzrDMiEHnriyni_M6YuWjqz'
-              cardRoute='/monthlyCalendar'
+              cardRoute='/#/monthlyCalendar'
               cardPrice=''
               cardType='spreadsheet'
             />
