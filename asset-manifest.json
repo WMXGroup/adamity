@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/adamity/static/js/main.8ef55cf5.chunk.js",
-    "main.js.map": "/adamity/static/js/main.8ef55cf5.chunk.js.map",
+    "main.js": "/adamity/static/js/main.552f1014.chunk.js",
+    "main.js.map": "/adamity/static/js/main.552f1014.chunk.js.map",
     "runtime~main.js": "/adamity/static/js/runtime~main.c9dc9881.js",
     "runtime~main.js.map": "/adamity/static/js/runtime~main.c9dc9881.js.map",
-    "static/js/2.f5fd20d5.chunk.js": "/adamity/static/js/2.f5fd20d5.chunk.js",
-    "static/js/2.f5fd20d5.chunk.js.map": "/adamity/static/js/2.f5fd20d5.chunk.js.map",
+    "static/js/2.ac78a793.chunk.js": "/adamity/static/js/2.ac78a793.chunk.js",
+    "static/js/2.ac78a793.chunk.js.map": "/adamity/static/js/2.ac78a793.chunk.js.map",
     "index.html": "/adamity/index.html",
-    "precache-manifest.4cfd07c656fde3c6e5ead79636a2a8fb.js": "/adamity/precache-manifest.4cfd07c656fde3c6e5ead79636a2a8fb.js",
+    "precache-manifest.839c3b2e5c5adf4b4f9cbcd26c2f4e49.js": "/adamity/precache-manifest.839c3b2e5c5adf4b4f9cbcd26c2f4e49.js",
     "service-worker.js": "/adamity/service-worker.js",
     "static/media/Outliner.png": "/adamity/static/media/Outliner.0154eeeb.png",
     "static/media/back.jpg": "/adamity/static/media/back.0ff3ab99.jpg",
